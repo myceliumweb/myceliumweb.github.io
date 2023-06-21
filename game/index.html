@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mushroom Farm</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Grow mushrooms and expand your farm.">
+    <meta name="keywords" content="Mushroom,Farm,Mycelium,Monopoly">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- loading screen -->
+    <div class="spread" id="loading-screen">
+      <h1 class="dark bold">Mushroom Farm</h1>
+      <h5 class="light">Loading a mycelium monstrocity<br></h5>
+    </div>
+    
+    <!-- sidebar -->
+    <div id="sidebar">
+      <img id="logo" src="images/logo.png">     
+      <button class="menu" onclick="display(farm,farmPage,this)">Your Farm</button>
+      <button class="menu" onclick="display(inventory,inventoryPage,this)">Inventory</button>
+      <button class="menu" onclick="display(scavenge,scavengePage,this)">Scavenge</button>
+      <button class="menu" onclick="display(finances,financesPage,this)">Finances</button>
+      <button class="menu" onclick="display(sell,sellPage,this)">Sell</button>
+      <button class="menu" onclick="display(purchases,purchasesPage,this)">Purchases</button>
+      <button class="menu" onclick="display(genetics,geneticsPage,this)">Genetics</button>
+      <button class="menu" onclick="display(achievements,achievementsPage,this)">Achievements</button>
+      <button class="menu" id="more-activate" onclick="toggleMore(this)">More ></button>
+      <div id="more">
+        <button class="menu" onclick="display(app,appPage,this)">Install app</button>
+        <button class="menu" onclick="display(about,aboutPage,this)">About Game</button>
+        <button class="menu" onclick="display(data,dataPage,this)">Data and Privacy</button>
+        <button class="menu" onclick="display(settings,settingsPage,this)" style="margin-bottom:10px">Settings</button>
+      </div>
+    </div>
+    
+    <!-- content -->
+    <div id="content">
+      <div class="frame" id="farm"></div>
+      <div class="frame" id="inventory"></div>
+      <div class="frame" id="scavenge"></div>
+      <div class="frame" id="finances"></div>
+      <div class="frame" id="sell"></div>
+      <div class="frame" id="purchases"></div>
+      <div class="frame" id="genetics"></div>
+      <div class="frame" id="achievements"></div>
+      <div class="frame" id="app"></div>
+      <div class="frame" id="about"></div>
+      <div class="frame" id="data"></div>
+      <div class="frame" id="settings"></div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
