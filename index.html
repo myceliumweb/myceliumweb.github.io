@@ -15,14 +15,16 @@
   <body>
     <div id="top">
       <button class="menu" onclick="location.reload()">Mycelium Games</button>
-      <button class="menu right" onclick="notify(signIn)">Sign in</button>
+      <a href="portal/index.html">
+        <button class="menu right" onclick="notify(signIn)">Sign in portal</button>
+      </a>
       <button class="menu right" hidden>XP 0.00</button>
     </div>
     <div id="promotion">
       <div id="promotion-div">
         <h1>No ads.<br>No fees. <br>Always play for free on Mycelium Games.</h1>
       </div>
-      <button style="width:100%" class="menu">Mushroom Farm now available ></button>
+      <button style="width:100%" class="menu" onclick="notify('MUSHROOM FARM is now available online!<br>100% free with your Mycelium Games account.<br><br>Open the sign in page to access all games for free.')">Mushroom Farm now available ></button>
     </div>
     
     <div id="shadow" onclick="hide(message);hide(shadow);"></div>
